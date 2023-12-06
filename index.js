@@ -1,11 +1,14 @@
 'use strict'
 const header = document.querySelector('header'),
 headerBtn = header.querySelector('.headermenu'),
-headerNav = header.querySelector('nav');
+headerNav = header.querySelector('nav'),
+closeNav = header.querySelector('.closenav')
 headerBtn.addEventListener('click', function(){
-    headerNav.classList.toggle('show')
+    headerNav.classList.add('show')
 });
-
+closeNav.addEventListener('click', function(){
+    headerNav.classList.remove('show')
+})
 const heroSection = document.querySelector('.hero-section'),
 heroScrollDiv = heroSection.querySelector('.scrollimage'),
 heroControlRight =  heroSection.querySelector('#arright'),
