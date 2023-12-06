@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tripi</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://api.fontshare.com/v2/css?f[]=trench-slab@600&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+        <script src="./index.js" defer></script>
+    </head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/image/logo.png" alt="">
+            <span>TRIPI</span>
+       </div>
+        <nav>
+            <img src="./image/close.png" alt="" srcset=""  class="closenav">
+                <ul>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#destination">Destinations</a></li>
+                    <li><a href="#bookings">Bookings</a></li>
+                </ul>
+                <div class="btn">
+                    <button type="button"><a href="./login.html">Log in</a></button>
+                    <button type="button"><a href="./signup.html">Sign up</a></button>
+                </div>
+        </nav>
+        <img src="/image/menu.png" alt="menubar" class="headermenu">
+    </header>
+    <main>
+        <section class="hero-section">
+            <h1><span>Travel,</span> enjoy and live a new and full <span>life</span></h1>
+            <div class="scrollimage">
+                <img id="arleft" src="image/left-arrow.png" alt="previous">
+                    <img src="/image/singapore.png" class="imagecarousel abs" alt="fisherman on boat" style="translate: -180%;">
+                    <img src="/image/countryimage.png" class="imagecarousel" alt="city night view">
+                    <img src="/image/rome.png" class="imagecarousel abs" alt="city night life" style="translate: 180%">
+                    <img id="arright" src="image/right-arrow.png" alt="next">
+                </div>
+        </section>
+        <form action="" method="get">
+            <div class="formcontent">
+                <label for="">Location</label>
+                <select name="" id="">
+                    <option value="">Nigeria</option>
+                    <option value="">Ghana</option>
+                    <option value="">South Africa</option>
+                </select>
+            </div>
+            <div class="formcontent">
+                <label for="">Destination</label>
+                <select name="" id="">
+                    <option value="">London, Uk</option>
+                    <option value="">Lagos, nigeria</option>
+                    <option value="">F.C.T, Nigeria</option>
+                </select>
+            </div>
+            <div class="formcontent">
+                    <label for="">Travel Date</label>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="formcontent">
+                    <label for="">Person</label>
+                    <select name="" id="">
+                        <option value="">01</option>
+                        <option value="">02</option>
+                        <option value="">03</option>
+                        <option value="">04</option>
+                        <option value="">05</option>
+                    </select>
+                </div>
+                <div class="formcontent">
+                    <label for="">Include Ticket</label>
+                    <select name="" id="">
+                        <option value="">Flights</option>
+                        <option value="">Flight, Hotels</option>
+                        <option value="">Hotels</option>
+                    </select>
+                </div>
+                <button id="subtn">
+                    <p>Book</p>
+                    <svg width="22" height="22" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.16663 4.16663H7.79164C10.0416 4.16663 11.8125 6.10413 11.625 8.33329L9.89579 29.0833C9.60413 32.4791 12.2916 35.3958 15.7083 35.3958H37.8958C40.8958 35.3958 43.5208 32.9375 43.75 29.9583L44.8749 14.3333C45.1249 10.875 42.4999 8.06245 39.0208 8.06245H12.125" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M33.8542 45.8333C35.2924 45.8333 36.4583 44.6674 36.4583 43.2292C36.4583 41.7909 35.2924 40.625 33.8542 40.625C32.4159 40.625 31.25 41.7909 31.25 43.2292C31.25 44.6674 32.4159 45.8333 33.8542 45.8333Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17.1875 45.8333C18.6258 45.8333 19.7917 44.6674 19.7917 43.2292C19.7917 41.7909 18.6258 40.625 17.1875 40.625C15.7493 40.625 14.5834 41.7909 14.5834 43.2292C14.5834 44.6674 15.7493 45.8333 17.1875 45.8333Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.75 16.6666H43.75" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button type="submit">
+                    <svg width="32" height="32" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.16663 4.16663H7.79164C10.0416 4.16663 11.8125 6.10413 11.625 8.33329L9.89579 29.0833C9.60413 32.4791 12.2916 35.3958 15.7083 35.3958H37.8958C40.8958 35.3958 43.5208 32.9375 43.75 29.9583L44.8749 14.3333C45.1249 10.875 42.4999 8.06245 39.0208 8.06245H12.125" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M33.8542 45.8333C35.2924 45.8333 36.4583 44.6674 36.4583 43.2292C36.4583 41.7909 35.2924 40.625 33.8542 40.625C32.4159 40.625 31.25 41.7909 31.25 43.2292C31.25 44.6674 32.4159 45.8333 33.8542 45.8333Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17.1875 45.8333C18.6258 45.8333 19.7917 44.6674 19.7917 43.2292C19.7917 41.7909 18.6258 40.625 17.1875 40.625C15.7493 40.625 14.5834 41.7909 14.5834 43.2292C14.5834 44.6674 15.7493 45.8333 17.1875 45.8333Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.75 16.6666H43.75" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </form>
+            <section class="sponsor-logo">
+                <div class="imgDivs">
+                    <img src="/image/tripadvisorlogo.png" alt="" >
+                    </div>
+                    <div class="imgDivs">
+                    <img src="/image/airbnb.png" alt="Airbnb Logo" >
+                    </div>
+                    <div class="imgDivs">
+                    <img src="/image/Hiltonlogo.png" alt="Hilton logo" >
+                    </div>
+                    <div class="imgDivs">
+                    <img src="/image/mariott.png" alt="Marriot International Logo" >
+                    </div>
+                    <div class="imgDivs">
+                    <img src="/image/expedialogo.png" alt="Expedia Group logo" >
+                    </div>
+            </section>
+            <section class="about" id="about">
+                <h3>About Tripi</h3>
+                <p>At Tripi, <svg  width="40" height="40" viewBox="0 0 66 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.1561 10.7872L22.0051 2.707L0.0852051 24.0993V39.8994L0.142455 39.955L30.1561 10.7872ZM13.8496 31.9996L21.9992 24.0457L41.0147 42.6045L32.8652 50.5583L13.8496 31.9996ZM41.0235 63.9441L11.1379 34.6514L2.85882 42.6066L24.7778 64H40.9663L41.0235 63.9441ZM24.7217 0.055625L54.608 29.3491L62.8872 21.3943L40.9682 0H24.7787L24.7217 0.055625ZM24.717 21.3956L32.8666 13.4417L51.8823 32.0006L43.7327 39.9545L24.717 21.3956ZM43.7401 61.2928L65.6603 39.8991V23.9905L35.5894 53.2127L43.7401 61.2928ZM65.6603 64V45.2019L46.3995 64H65.6603ZM0.0852051 45.2021V64H19.3445L0.0852051 45.2021ZM65.6038 18.7429L65.6603 18.6877V0H46.4012L65.6038 18.7429ZM0.0852051 0V18.7968L19.3454 0H0.0852051Z" fill="#1D956A"/>
+                    </svg> we are your ultimate travel <span>companion</span> in exploring the world's wonders! At Tripi, we believe that travel is not just about reaching destinations; it's about embarking on unforgettable <span>journeys</span>, discovering new cultures, and creating lasting memories.
+                </p>
+            <div class="aboutcon-flexContainer">
+                <div class="aboutcon-flex">
+                    <div class="about-con">
+                        <button type="button">
+                            <span>LEARN MORE</span>
+                            <svg width="32" height="32" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.9998 40.3333C32.1251 40.3333 40.3332 32.1252 40.3332 22C40.3332 11.8747 32.1251 3.66663 21.9998 3.66663C11.8746 3.66663 3.6665 11.8747 3.6665 22C3.6665 32.1252 11.8746 40.3333 21.9998 40.3333Z" fill="#111111"/>
+                                <path d="M19.69 28.4716L26.1433 21.9999L19.69 15.5283" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="aboutcontext">
+                            <img src="/image/Frame 8.png" alt="">
+                            <h4>Our Passion For Travel</h4>
+                            <p>At Tripi, our passion fuels exploration. Join us in unlocking the world'swonders.</p>
+                        </div>
+                    </div>
+                    <div class="aboutcontext">
+                        <img src="/image/Frame 7.png" alt="">
+                        <h4>Tailored Experiences</h4>
+                        <p>Discover personalized itineraries with Tripi for seamless, worry-freetravels.</p>
+                    </div>
+                    <div class="aboutcontext">
+                        <img src="/image/Frame 9.png" alt="">
+                        <h4>Inspiring Journeys</h4>
+                        <p>Let Tripi guide you to unforgettable destinations, creating cherished memories<p>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section class="service">
+                <h3>Services</h3>
+                <div class="servicecol">
+                    <div class="servicecontent">
+                        <span>01</span>
+                        <div class="service-text">
+                            <p>Calculated Weather</p>
+                            <p>Whatever time you book, whatever day, we got you covered 24/7, our service is</p>
+                        </div>
+                    </div>
+                    <div class="servicecontent">
+                        <span>02</span>
+                        <div class="service-text">
+                            <p>Customization</p>
+                            <p>You have the opportunity to make bookings as you like, anytime you want.</p>
+                        </div>
+                    </div>
+                    <div class="servicecontent">
+                        <span>03</span>
+                        <div class="service-text">
+                            <p>Hotel reservations</p>
+                            <p>You got to your destination, and you're very much exhausted, Tripi got you!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="destination" id="destination">
+                <h3>Destinations</h3>
+                <div class="destgrid">
+                    <div class="destinationcontent">
+                        <img src="/image/rome.png" alt="">
+                        <div class="desthead">
+                            <h4>Rome, Italy</h4>
+                            <div class="star">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_329)">
+                                    <path d="M10.3875 14.2495L9.99996 14.0156L9.61241 14.2495L5.98273 16.4402L6.94296 12.3115L7.04544 11.8709L6.7035 11.5747L3.49884 8.79892L7.72273 8.43469L8.17248 8.3959L8.34875 7.98032L9.99996 4.08735L11.6512 7.98032L11.8274 8.3959L12.2772 8.43469L16.5011 8.79892L13.2964 11.5747L12.9545 11.8709L13.057 12.3115L14.0172 16.4402L10.3875 14.2495Z" stroke="#E2A710" stroke-width="1.5"/>
+                                    </g>
+                                    <clipPath id="clip0_37_329">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                            </div>
+                        </div>
+                        <span>
+                            <div class="dest-icon">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.47045 14.7144V12.5485C6.47045 11.9956 6.92193 11.5474 7.47887 11.5474H9.51475C9.7822 11.5474 10.0387 11.6529 10.2278 11.8406C10.4169 12.0284 10.5232 12.283 10.5232 12.5485V14.7144C10.5215 14.9443 10.6123 15.1653 10.7754 15.3284C10.9385 15.4915 11.1605 15.5833 11.3921 15.5833H12.781C13.4297 15.585 14.0524 15.3303 14.5117 14.8755C14.971 14.4208 15.2291 13.8032 15.2291 13.1592V6.98898C15.2291 6.46878 14.9969 5.97535 14.5949 5.6416L9.86991 1.89537C9.04799 1.23852 7.87035 1.25973 7.07297 1.94574L2.45578 5.6416C2.03484 5.96551 1.78325 6.46041 1.77081 6.98898V13.153C1.77081 14.4952 2.86687 15.5833 4.21894 15.5833H5.57619C6.0571 15.5833 6.44794 15.1981 6.45142 14.7207L6.47045 14.7144Z" fill="#1D956A"/>
+                                </svg>                                    
+                                <p>Secure</p>
+                            </div>
+                            <div class="dest-icon">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.19468 11.8535C2.09213 11.8536 1.99176 11.8239 1.90568 11.7682C1.8196 11.7125 1.75149 11.633 1.70958 11.5394C1.20239 10.4067 0.986726 9.16503 1.08224 7.92761C1.17775 6.6902 1.58141 5.49635 2.25642 4.45487C2.93143 3.41339 3.85634 2.55738 4.94686 1.96486C6.03739 1.37233 7.25885 1.06212 8.49995 1.0625C8.64085 1.0625 8.77597 1.11847 8.8756 1.2181C8.97523 1.31773 9.0312 1.45285 9.0312 1.59375V8.5C9.03122 8.60258 9.00154 8.70298 8.94574 8.78906C8.88994 8.87514 8.81042 8.94323 8.71677 8.9851L2.41149 11.8057C2.34342 11.8368 2.26952 11.8531 2.19468 11.8535Z" fill="#1D956A"/>
+                                    <path d="M10.4121 2.26384C10.3736 2.25603 10.3338 2.25687 10.2957 2.26628C10.2575 2.2757 10.2219 2.29347 10.1915 2.31831C10.161 2.34315 10.1364 2.37444 10.1195 2.40992C10.1026 2.4454 10.0938 2.48419 10.0937 2.52349V8.50006C10.0934 8.80765 10.0043 9.10862 9.83701 9.36674C9.66972 9.62487 9.4314 9.82915 9.15074 9.95502L3.42419 12.5176C3.3887 12.5335 3.35711 12.5569 3.33167 12.5863C3.30622 12.6157 3.28754 12.6503 3.27693 12.6877C3.26632 12.7251 3.26405 12.7644 3.27028 12.8027C3.2765 12.8411 3.29107 12.8776 3.31296 12.9098C3.75122 13.5543 4.29521 14.1202 4.92199 14.5835C6.10949 15.4669 7.55116 15.942 9.0312 15.9376C12.8393 15.9376 15.9375 12.8394 15.9375 9.03131C15.9375 5.69605 13.5608 2.90533 10.4121 2.26384Z" fill="#1D956A"/>
+                                </svg>
+                                <p>250 slots left</p>
+                            </div>
+                            <div class="dest-icon">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.9375 15.1593V15.5031C19.9375 15.6749 19.7656 15.8468 19.5938 15.8468C19.4219 15.8468 19.25 15.6749 19.25 15.5031V15.1593H18.5625V15.5031C18.5625 15.6749 18.3906 15.8468 18.2188 15.8468C18.0469 15.8468 17.875 15.6749 17.875 15.5031V15.1593H17.1875V15.5031C17.1875 15.6749 17.0156 15.8468 16.8438 15.8468C16.6719 15.8468 16.5 15.6749 16.5 15.5031V15.1593H15.8125V15.5031C15.8125 15.6749 15.6406 15.8468 15.4688 15.8468C15.2969 15.8468 15.125 15.6749 15.125 15.5031V15.1593H14.4375V16.5343H20.625V17.5656C20.625 17.7374 20.7969 17.9093 20.9688 17.9093C21.1406 17.9093 21.3125 17.7374 21.3125 17.5656V15.1593H19.9375ZM15.125 12.0312V9.9687C15.125 9.79683 14.9531 9.62495 14.7812 9.62495H14.4375V12.375H14.7812C14.9531 12.375 15.125 12.2031 15.125 12.0312ZM9.93437 4.09058H7.5625V5.1562C7.5625 5.32808 7.39062 5.49995 7.21875 5.49995H4.84688C3.3 5.49995 2.0625 6.73745 2.0625 8.28433V10.6562C2.0625 10.8281 1.89062 11 1.71875 11H0.6875V13.4062C0.6875 15.5031 2.40625 17.2218 4.50313 17.2218H13.75V7.9062C13.75 5.80933 12.0312 4.09058 9.93437 4.09058ZM2.40625 15.8125C2.23438 15.8125 2.0625 15.6406 2.0625 15.4687C2.0625 15.2968 2.23438 15.125 2.40625 15.125C2.57812 15.125 2.75 15.2968 2.75 15.4687C2.75 15.6406 2.57812 15.8125 2.40625 15.8125ZM7.21875 15.125C4.74375 15.125 2.75 13.1312 2.75 10.6562C2.75 8.1812 4.74375 6.18745 7.21875 6.18745C9.69375 6.18745 11.6875 8.1812 11.6875 10.6562C11.6875 13.1312 9.69375 15.125 7.21875 15.125ZM12.0312 6.18745C11.8594 6.18745 11.6875 6.01558 11.6875 5.8437C11.6875 5.67183 11.8594 5.49995 12.0312 5.49995C12.2031 5.49995 12.375 5.67183 12.375 5.8437C12.375 6.01558 12.2031 6.18745 12.0312 6.18745Z" fill="#1D956A"/>
+                                    <path d="M1.375 8.28433C1.375 6.35933 2.92188 4.81245 4.84688 4.81245H6.875V4.09058H4.50313C2.40625 4.09058 0.6875 5.80933 0.6875 7.9062V10.3125H1.375V8.28433ZM7.21875 6.87495C5.12187 6.87495 3.4375 8.55933 3.4375 10.6562C3.4375 12.7531 5.12187 14.4375 7.21875 14.4375C9.31563 14.4375 11 12.7531 11 10.6562C11 8.55933 9.31563 6.87495 7.21875 6.87495ZM7.21875 11.6875C6.63438 11.6875 6.1875 11.2406 6.1875 10.6562C6.1875 10.0718 6.63438 9.62495 7.21875 9.62495C7.80312 9.62495 8.25 10.0718 8.25 10.6562C8.25 11.2406 7.80312 11.6875 7.21875 11.6875Z" fill="#1D956A"/>
+                                    <path d="M7.21875 11C7.4086 11 7.5625 10.8461 7.5625 10.6562C7.5625 10.4664 7.4086 10.3125 7.21875 10.3125C7.0289 10.3125 6.875 10.4664 6.875 10.6562C6.875 10.8461 7.0289 11 7.21875 11Z" fill="#1D956A"/>
+                                </svg>
+                                <p>1800m</p>
+                            </div>
+                        </span>
+                        <p>At Tripi, our passion fuels exploration. Join us in unlocking the world's wonders.</p>
+                        <div class="destcon">
+                            <p>N 1,200,000.00</p>
+                            <button type="submit">Book now</button>
+                        </div>
+                    </div>
+                    <div class="destinationcontent">
+                        <img src="/image/shangai.png" alt="">
+                        <div class="desthead">
+                            <h4>Shangai, Japan</h4>
+                            <div class="star">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_329)">
+                                    <path d="M10.3875 14.2495L9.99996 14.0156L9.61241 14.2495L5.98273 16.4402L6.94296 12.3115L7.04544 11.8709L6.7035 11.5747L3.49884 8.79892L7.72273 8.43469L8.17248 8.3959L8.34875 7.98032L9.99996 4.08735L11.6512 7.98032L11.8274 8.3959L12.2772 8.43469L16.5011 8.79892L13.2964 11.5747L12.9545 11.8709L13.057 12.3115L14.0172 16.4402L10.3875 14.2495Z" stroke="#E2A710" stroke-width="1.5"/>
+                                    </g>
+                                    <clipPath id="clip0_37_329">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                            </div>
+                        </div>
+                        <span>
+                            <div class="dest-icon">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.47045 14.7144V12.5485C6.47045 11.9956 6.92193 11.5474 7.47887 11.5474H9.51475C9.7822 11.5474 10.0387 11.6529 10.2278 11.8406C10.4169 12.0284 10.5232 12.283 10.5232 12.5485V14.7144C10.5215 14.9443 10.6123 15.1653 10.7754 15.3284C10.9385 15.4915 11.1605 15.5833 11.3921 15.5833H12.781C13.4297 15.585 14.0524 15.3303 14.5117 14.8755C14.971 14.4208 15.2291 13.8032 15.2291 13.1592V6.98898C15.2291 6.46878 14.9969 5.97535 14.5949 5.6416L9.86991 1.89537C9.04799 1.23852 7.87035 1.25973 7.07297 1.94574L2.45578 5.6416C2.03484 5.96551 1.78325 6.46041 1.77081 6.98898V13.153C1.77081 14.4952 2.86687 15.5833 4.21894 15.5833H5.57619C6.0571 15.5833 6.44794 15.1981 6.45142 14.7207L6.47045 14.7144Z" fill="#1D956A"/>
+                                </svg>                                    
+                                <p>Secure</p>
+                            </div>
+                            <div class="dest-icon">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.19468 11.8535C2.09213 11.8536 1.99176 11.8239 1.90568 11.7682C1.8196 11.7125 1.75149 11.633 1.70958 11.5394C1.20239 10.4067 0.986726 9.16503 1.08224 7.92761C1.17775 6.6902 1.58141 5.49635 2.25642 4.45487C2.93143 3.41339 3.85634 2.55738 4.94686 1.96486C6.03739 1.37233 7.25885 1.06212 8.49995 1.0625C8.64085 1.0625 8.77597 1.11847 8.8756 1.2181C8.97523 1.31773 9.0312 1.45285 9.0312 1.59375V8.5C9.03122 8.60258 9.00154 8.70298 8.94574 8.78906C8.88994 8.87514 8.81042 8.94323 8.71677 8.9851L2.41149 11.8057C2.34342 11.8368 2.26952 11.8531 2.19468 11.8535Z" fill="#1D956A"/>
+                                    <path d="M10.4121 2.26384C10.3736 2.25603 10.3338 2.25687 10.2957 2.26628C10.2575 2.2757 10.2219 2.29347 10.1915 2.31831C10.161 2.34315 10.1364 2.37444 10.1195 2.40992C10.1026 2.4454 10.0938 2.48419 10.0937 2.52349V8.50006C10.0934 8.80765 10.0043 9.10862 9.83701 9.36674C9.66972 9.62487 9.4314 9.82915 9.15074 9.95502L3.42419 12.5176C3.3887 12.5335 3.35711 12.5569 3.33167 12.5863C3.30622 12.6157 3.28754 12.6503 3.27693 12.6877C3.26632 12.7251 3.26405 12.7644 3.27028 12.8027C3.2765 12.8411 3.29107 12.8776 3.31296 12.9098C3.75122 13.5543 4.29521 14.1202 4.92199 14.5835C6.10949 15.4669 7.55116 15.942 9.0312 15.9376C12.8393 15.9376 15.9375 12.8394 15.9375 9.03131C15.9375 5.69605 13.5608 2.90533 10.4121 2.26384Z" fill="#1D956A"/>
+                                </svg>
+                                <p>250 slots left</p>
+                            </div>
+                            <div class="dest-icon">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.9375 15.1593V15.5031C19.9375 15.6749 19.7656 15.8468 19.5938 15.8468C19.4219 15.8468 19.25 15.6749 19.25 15.5031V15.1593H18.5625V15.5031C18.5625 15.6749 18.3906 15.8468 18.2188 15.8468C18.0469 15.8468 17.875 15.6749 17.875 15.5031V15.1593H17.1875V15.5031C17.1875 15.6749 17.0156 15.8468 16.8438 15.8468C16.6719 15.8468 16.5 15.6749 16.5 15.5031V15.1593H15.8125V15.5031C15.8125 15.6749 15.6406 15.8468 15.4688 15.8468C15.2969 15.8468 15.125 15.6749 15.125 15.5031V15.1593H14.4375V16.5343H20.625V17.5656C20.625 17.7374 20.7969 17.9093 20.9688 17.9093C21.1406 17.9093 21.3125 17.7374 21.3125 17.5656V15.1593H19.9375ZM15.125 12.0312V9.9687C15.125 9.79683 14.9531 9.62495 14.7812 9.62495H14.4375V12.375H14.7812C14.9531 12.375 15.125 12.2031 15.125 12.0312ZM9.93437 4.09058H7.5625V5.1562C7.5625 5.32808 7.39062 5.49995 7.21875 5.49995H4.84688C3.3 5.49995 2.0625 6.73745 2.0625 8.28433V10.6562C2.0625 10.8281 1.89062 11 1.71875 11H0.6875V13.4062C0.6875 15.5031 2.40625 17.2218 4.50313 17.2218H13.75V7.9062C13.75 5.80933 12.0312 4.09058 9.93437 4.09058ZM2.40625 15.8125C2.23438 15.8125 2.0625 15.6406 2.0625 15.4687C2.0625 15.2968 2.23438 15.125 2.40625 15.125C2.57812 15.125 2.75 15.2968 2.75 15.4687C2.75 15.6406 2.57812 15.8125 2.40625 15.8125ZM7.21875 15.125C4.74375 15.125 2.75 13.1312 2.75 10.6562C2.75 8.1812 4.74375 6.18745 7.21875 6.18745C9.69375 6.18745 11.6875 8.1812 11.6875 10.6562C11.6875 13.1312 9.69375 15.125 7.21875 15.125ZM12.0312 6.18745C11.8594 6.18745 11.6875 6.01558 11.6875 5.8437C11.6875 5.67183 11.8594 5.49995 12.0312 5.49995C12.2031 5.49995 12.375 5.67183 12.375 5.8437C12.375 6.01558 12.2031 6.18745 12.0312 6.18745Z" fill="#1D956A"/>
+                                    <path d="M1.375 8.28433C1.375 6.35933 2.92188 4.81245 4.84688 4.81245H6.875V4.09058H4.50313C2.40625 4.09058 0.6875 5.80933 0.6875 7.9062V10.3125H1.375V8.28433ZM7.21875 6.87495C5.12187 6.87495 3.4375 8.55933 3.4375 10.6562C3.4375 12.7531 5.12187 14.4375 7.21875 14.4375C9.31563 14.4375 11 12.7531 11 10.6562C11 8.55933 9.31563 6.87495 7.21875 6.87495ZM7.21875 11.6875C6.63438 11.6875 6.1875 11.2406 6.1875 10.6562C6.1875 10.0718 6.63438 9.62495 7.21875 9.62495C7.80312 9.62495 8.25 10.0718 8.25 10.6562C8.25 11.2406 7.80312 11.6875 7.21875 11.6875Z" fill="#1D956A"/>
+                                    <path d="M7.21875 11C7.4086 11 7.5625 10.8461 7.5625 10.6562C7.5625 10.4664 7.4086 10.3125 7.21875 10.3125C7.0289 10.3125 6.875 10.4664 6.875 10.6562C6.875 10.8461 7.0289 11 7.21875 11Z" fill="#1D956A"/>
+                                </svg>
+                                <p>1800m</p>
+                            </div>
+                        </span>
+                        <p>At Tripi, our passion fuels exploration. Join us in unlocking the world's wonders.</p>
+                        <div class="destcon">
+                            <p>N 1,200,000.00</p>
+                            <button type="submit">Book now</button>
+                        </div>
+                    </div>
+                    <div class="destinationcontent">
+                        <img src="/image/singapore.png" alt="">
+                        <div class="desthead">
+                            <h4>Singapore</h4>
+                            <div class="star">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_329)">
+                                    <path d="M10.3875 14.2495L9.99996 14.0156L9.61241 14.2495L5.98273 16.4402L6.94296 12.3115L7.04544 11.8709L6.7035 11.5747L3.49884 8.79892L7.72273 8.43469L8.17248 8.3959L8.34875 7.98032L9.99996 4.08735L11.6512 7.98032L11.8274 8.3959L12.2772 8.43469L16.5011 8.79892L13.2964 11.5747L12.9545 11.8709L13.057 12.3115L14.0172 16.4402L10.3875 14.2495Z" stroke="#E2A710" stroke-width="1.5"/>
+                                    </g>
+                                    <clipPath id="clip0_37_329">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                            </div>
+                        </div>
+                        <span>
+                            <div class="dest-icon">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.47045 14.7144V12.5485C6.47045 11.9956 6.92193 11.5474 7.47887 11.5474H9.51475C9.7822 11.5474 10.0387 11.6529 10.2278 11.8406C10.4169 12.0284 10.5232 12.283 10.5232 12.5485V14.7144C10.5215 14.9443 10.6123 15.1653 10.7754 15.3284C10.9385 15.4915 11.1605 15.5833 11.3921 15.5833H12.781C13.4297 15.585 14.0524 15.3303 14.5117 14.8755C14.971 14.4208 15.2291 13.8032 15.2291 13.1592V6.98898C15.2291 6.46878 14.9969 5.97535 14.5949 5.6416L9.86991 1.89537C9.04799 1.23852 7.87035 1.25973 7.07297 1.94574L2.45578 5.6416C2.03484 5.96551 1.78325 6.46041 1.77081 6.98898V13.153C1.77081 14.4952 2.86687 15.5833 4.21894 15.5833H5.57619C6.0571 15.5833 6.44794 15.1981 6.45142 14.7207L6.47045 14.7144Z" fill="#1D956A"/>
+                                </svg>                                    
+                                <p>Secure</p>
+                            </div>
+                            <div class="dest-icon">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.19468 11.8535C2.09213 11.8536 1.99176 11.8239 1.90568 11.7682C1.8196 11.7125 1.75149 11.633 1.70958 11.5394C1.20239 10.4067 0.986726 9.16503 1.08224 7.92761C1.17775 6.6902 1.58141 5.49635 2.25642 4.45487C2.93143 3.41339 3.85634 2.55738 4.94686 1.96486C6.03739 1.37233 7.25885 1.06212 8.49995 1.0625C8.64085 1.0625 8.77597 1.11847 8.8756 1.2181C8.97523 1.31773 9.0312 1.45285 9.0312 1.59375V8.5C9.03122 8.60258 9.00154 8.70298 8.94574 8.78906C8.88994 8.87514 8.81042 8.94323 8.71677 8.9851L2.41149 11.8057C2.34342 11.8368 2.26952 11.8531 2.19468 11.8535Z" fill="#1D956A"/>
+                                    <path d="M10.4121 2.26384C10.3736 2.25603 10.3338 2.25687 10.2957 2.26628C10.2575 2.2757 10.2219 2.29347 10.1915 2.31831C10.161 2.34315 10.1364 2.37444 10.1195 2.40992C10.1026 2.4454 10.0938 2.48419 10.0937 2.52349V8.50006C10.0934 8.80765 10.0043 9.10862 9.83701 9.36674C9.66972 9.62487 9.4314 9.82915 9.15074 9.95502L3.42419 12.5176C3.3887 12.5335 3.35711 12.5569 3.33167 12.5863C3.30622 12.6157 3.28754 12.6503 3.27693 12.6877C3.26632 12.7251 3.26405 12.7644 3.27028 12.8027C3.2765 12.8411 3.29107 12.8776 3.31296 12.9098C3.75122 13.5543 4.29521 14.1202 4.92199 14.5835C6.10949 15.4669 7.55116 15.942 9.0312 15.9376C12.8393 15.9376 15.9375 12.8394 15.9375 9.03131C15.9375 5.69605 13.5608 2.90533 10.4121 2.26384Z" fill="#1D956A"/>
+                                </svg>
+                                <p>250 slots left</p>
+                            </div>
+                            <div class="dest-icon">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.9375 15.1593V15.5031C19.9375 15.6749 19.7656 15.8468 19.5938 15.8468C19.4219 15.8468 19.25 15.6749 19.25 15.5031V15.1593H18.5625V15.5031C18.5625 15.6749 18.3906 15.8468 18.2188 15.8468C18.0469 15.8468 17.875 15.6749 17.875 15.5031V15.1593H17.1875V15.5031C17.1875 15.6749 17.0156 15.8468 16.8438 15.8468C16.6719 15.8468 16.5 15.6749 16.5 15.5031V15.1593H15.8125V15.5031C15.8125 15.6749 15.6406 15.8468 15.4688 15.8468C15.2969 15.8468 15.125 15.6749 15.125 15.5031V15.1593H14.4375V16.5343H20.625V17.5656C20.625 17.7374 20.7969 17.9093 20.9688 17.9093C21.1406 17.9093 21.3125 17.7374 21.3125 17.5656V15.1593H19.9375ZM15.125 12.0312V9.9687C15.125 9.79683 14.9531 9.62495 14.7812 9.62495H14.4375V12.375H14.7812C14.9531 12.375 15.125 12.2031 15.125 12.0312ZM9.93437 4.09058H7.5625V5.1562C7.5625 5.32808 7.39062 5.49995 7.21875 5.49995H4.84688C3.3 5.49995 2.0625 6.73745 2.0625 8.28433V10.6562C2.0625 10.8281 1.89062 11 1.71875 11H0.6875V13.4062C0.6875 15.5031 2.40625 17.2218 4.50313 17.2218H13.75V7.9062C13.75 5.80933 12.0312 4.09058 9.93437 4.09058ZM2.40625 15.8125C2.23438 15.8125 2.0625 15.6406 2.0625 15.4687C2.0625 15.2968 2.23438 15.125 2.40625 15.125C2.57812 15.125 2.75 15.2968 2.75 15.4687C2.75 15.6406 2.57812 15.8125 2.40625 15.8125ZM7.21875 15.125C4.74375 15.125 2.75 13.1312 2.75 10.6562C2.75 8.1812 4.74375 6.18745 7.21875 6.18745C9.69375 6.18745 11.6875 8.1812 11.6875 10.6562C11.6875 13.1312 9.69375 15.125 7.21875 15.125ZM12.0312 6.18745C11.8594 6.18745 11.6875 6.01558 11.6875 5.8437C11.6875 5.67183 11.8594 5.49995 12.0312 5.49995C12.2031 5.49995 12.375 5.67183 12.375 5.8437C12.375 6.01558 12.2031 6.18745 12.0312 6.18745Z" fill="#1D956A"/>
+                                    <path d="M1.375 8.28433C1.375 6.35933 2.92188 4.81245 4.84688 4.81245H6.875V4.09058H4.50313C2.40625 4.09058 0.6875 5.80933 0.6875 7.9062V10.3125H1.375V8.28433ZM7.21875 6.87495C5.12187 6.87495 3.4375 8.55933 3.4375 10.6562C3.4375 12.7531 5.12187 14.4375 7.21875 14.4375C9.31563 14.4375 11 12.7531 11 10.6562C11 8.55933 9.31563 6.87495 7.21875 6.87495ZM7.21875 11.6875C6.63438 11.6875 6.1875 11.2406 6.1875 10.6562C6.1875 10.0718 6.63438 9.62495 7.21875 9.62495C7.80312 9.62495 8.25 10.0718 8.25 10.6562C8.25 11.2406 7.80312 11.6875 7.21875 11.6875Z" fill="#1D956A"/>
+                                    <path d="M7.21875 11C7.4086 11 7.5625 10.8461 7.5625 10.6562C7.5625 10.4664 7.4086 10.3125 7.21875 10.3125C7.0289 10.3125 6.875 10.4664 6.875 10.6562C6.875 10.8461 7.0289 11 7.21875 11Z" fill="#1D956A"/>
+                                </svg>
+                                <p>1800m</p>
+                            </div>
+                        </span>
+                        <p>At Tripi, our passion fuels exploration. Join us in unlocking the world's wonders.</p>
+                        <div class="destcon">
+                            <p>N 1,200,000.00</p>
+                            <button type="submit">Book now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="destarrow">
+                    <img src="/image/previous.png" alt="previous destination" class="left">
+                    <img src="/image/next.png" alt="next destination" class="right">
+                </div>
+            </section>
+            <section class="review">
+                <h3>What Our Clients Say About Us</h3>
+                <div class="revgrid">
+                    <div class="reviewcontent">
+                        <div class="revhead">
+                            <div class="clientdetails">
+                                <img src="/image/client.png" alt="">
+                                <span>
+                                    <h4>Afe</h4>
+                                    <p>Ux/Ui Designer</p>
+                                </span>
+                            </div>
+                            <div class="staricon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_329)">
+                                    <path d="M10.3875 14.2495L9.99996 14.0156L9.61241 14.2495L5.98273 16.4402L6.94296 12.3115L7.04544 11.8709L6.7035 11.5747L3.49884 8.79892L7.72273 8.43469L8.17248 8.3959L8.34875 7.98032L9.99996 4.08735L11.6512 7.98032L11.8274 8.3959L12.2772 8.43469L16.5011 8.79892L13.2964 11.5747L12.9545 11.8709L13.057 12.3115L14.0172 16.4402L10.3875 14.2495Z" stroke="#E2A710" stroke-width="1.5"/>
+                                    </g>
+                                    <clipPath id="clip0_37_329">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                            </div>
+                        </div>
+                        <h5>It was great and helpful</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.</p>
+                    </div>
+                    <div class="reviewcontent">
+                        <div class="revhead">
+                            <div class="clientdetails">
+                                <img src="/image/client.png" alt="">
+                                <span>
+                                    <h4>Ola</h4>
+                                    <p> Designer</p>
+                                </span>
+                            </div>
+                            <div class="staricon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_329)">
+                                    <path d="M10.3875 14.2495L9.99996 14.0156L9.61241 14.2495L5.98273 16.4402L6.94296 12.3115L7.04544 11.8709L6.7035 11.5747L3.49884 8.79892L7.72273 8.43469L8.17248 8.3959L8.34875 7.98032L9.99996 4.08735L11.6512 7.98032L11.8274 8.3959L12.2772 8.43469L16.5011 8.79892L13.2964 11.5747L12.9545 11.8709L13.057 12.3115L14.0172 16.4402L10.3875 14.2495Z" stroke="#E2A710" stroke-width="1.5"/>
+                                    </g>
+                                    <clipPath id="clip0_37_329">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                            </div>
+                        </div>
+                        <h5>Highly recommend to everyone</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.</p>
+                    </div>
+                    <div class="reviewcontent">
+                        <div class="revhead">
+                            <div class="clientdetails">
+                                <img src="/image/client.png" alt="">
+                                <span>
+                                    <h4>Leo</h4>
+                                    <p>Lead Designer</p>
+                                </span>
+                            </div>
+                            <div class="staricon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_317)">
+                                    <path d="M9.99996 14.8916L15.15 18L13.7875 12.1416L18.3333 8.20413L12.3416 7.68746L9.99996 2.16663L7.65829 7.68746L1.66663 8.20413L6.21246 12.1416L4.84996 18L9.99996 14.8916Z" fill="#E2A710"/>
+                                    </g>
+                                    <clipPath id="clip0_37_317">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_37_329)">
+                                    <path d="M10.3875 14.2495L9.99996 14.0156L9.61241 14.2495L5.98273 16.4402L6.94296 12.3115L7.04544 11.8709L6.7035 11.5747L3.49884 8.79892L7.72273 8.43469L8.17248 8.3959L8.34875 7.98032L9.99996 4.08735L11.6512 7.98032L11.8274 8.3959L12.2772 8.43469L16.5011 8.79892L13.2964 11.5747L12.9545 11.8709L13.057 12.3115L14.0172 16.4402L10.3875 14.2495Z" stroke="#E2A710" stroke-width="1.5"/>
+                                    </g>
+                                    <clipPath id="clip0_37_329">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </svg>
+                            </div>
+                        </div>
+                        <h5>It was a very good experience</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.</p>
+                    </div>
+                </div>
+                <div class="reviewarrow">
+                    <img src="/image/chevron-down.png" alt="previous review" class="left">
+                    <img src="/image/chevron-do.png" alt="next review" class="right">
+                </div>
+            </section>
+            <section class="latestnews">
+                <img id="plus-sign" src="/image/Group 5.png" alt="">
+                <div class="newsform">
+                    <img id="plane" src="/image/plane.png" alt="">
+                    <h3>Subscribe to get information, latest news and other
+                        interesting offers about Tripi.</h3>
+                    <form action="">
+                        <div class="input-form">
+                            <input type="email" name="" id="" placeholder="Your Email">
+                            <img src="/image/envelope.png" alt="">
+                        </div>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footlogo">
+                <img src="/image/footlogo.png" alt="">
+            </div>
+            <h3>With us, every moment matters</h3>
+            <form action="">
+                <button type="button">Get started</button>
+                <button type="button">
+                    <img src="/image/sms.png" alt="">
+                    <p>Contact us</p>
+                </button>
+                <button type="button">
+                    <img src="/image/booknow.png" alt="">
+                    <p>Book now</p>
+                </button>
+            </form>
+            <section class="footer">
+                <div class="footercontent">
+                    <div class="footcon-flex">
+                        <div class="footcon">
+                            <p>Company</p>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Destinations</a></li>
+                                <li><a href="#">Bookings</a></li>
+                            </ul>
+                        </div>
+                        <div class="footcon">
+                            <p>Legal</p>
+                            <ul>
+                                <li><a href="#">Terms of use</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Travel rules</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footcon">
+                        <p>Social</p>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="/image/footerlogo.png" alt="">
+                <div class="foot">
+                    <p>All rights reserved.</p>
+                    <p>2023 Tripi</p>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

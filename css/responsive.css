@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1024px) {
+    .about-con button span{
+        font-size: 20px;
+    }
+    .about{
+        gap: 32px;
+    }
+    .servicecontent{
+        gap: 4rem;
+    }
+    .service-text{
+        gap: 1rem;
+    }
+    .latestnews #plus-sign{
+        top: 430px;
+    }
+    footer form button:nth-child(1){
+        font-size: 28px;
+        color: #FFFFFF;
+    }
+    footer form button p{
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+    footer form button img{
+        width: 28px;
+    }
+}
+
+@media (max-width:840px) {
+    .hero-section h1{
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 3.5rem;
+    }
+    nav{
+        flex-direction: column;
+        display: none;
+        transform: translateX(120%);
+    }
+    nav.show{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        display: flex;
+        background: #111111;
+        padding: 40px 10px;
+        transform: translateX(0);
+    }
+    nav.show ul, nav.show .btn{
+        margin: 0 10% 0 auto;
+    }
+    nav.show ul{
+        padding: 0;
+        background: unset;
+    }
+    nav.show .btn{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    header img{
+        display: block;
+    }
+    .logo img{
+        width: 23px;
+        
+        height: 22px;
+    }
+.logo h1{
+        font-size: 20px;
+}
+    form[method=get]{
+        grid-template-columns: repeat(3, 1fr);
+        background: #191919;
+        margin: auto;
+        margin-block: 40px;
+        position: relative;
+    }
+    form[method=get] button[type=submit]{
+        top: 68px;
+        right: 30px;
+    }
+    .about{
+        padding-block: 64px;
+    }
+    .about h3{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .about p{
+        padding-block: 40px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .about svg{
+        width: 30px;
+        height: 25px;
+    }
+    .about p span{
+        padding: 4px 8px;
+        font-size: 16px;
+    }
+    .aboutcontext p{
+        padding-block: 4px 0;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .aboutcontext h4{
+        padding-block: 8px 0;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .about-con{
+        gap: 16px;
+    }
+    .aboutcon-flexContainer{
+        padding: 85px 0 0;
+    }
+    .about-con button{
+        position: absolute;
+        top: 0;
+    }
+    .servicecol{
+        padding-top: 40px;
+    }
+    .service h3{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .servicecontent{
+        gap: 4rem;
+    }
+    .servicecontent span{
+        font-size: 20px;
+    }
+    .service-text p:nth-child(1){
+        width: 100%;
+    }
+    .service-text p:nth-child(2){
+        width: 100%;
+    }
+    .service-text{
+        flex-direction: column;
+        gap: 1rem;
+        text-align: left;
+    }
+    .destination h3{
+        font-size: 16px;
+    }
+    .desthead h4{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .desthead .star svg{
+        width: 13px;
+    }
+    .destinationcontent span svg{
+        width: 14px;
+    }
+    .dest-icon p{
+        font-size: 12px;
+    }
+    .destcon p{
+        font-size: 18px;
+    }
+    .destcon button{
+        font-size: 16px;
+    }
+    .destarrow img{
+        width: 44px;
+    }
+    .review h3{
+        font-size: 16px;
+    }
+    .reviewcontent{
+        width: 460px;
+        padding: 24px;
+    }
+    .revhead .staricon svg{
+        width: 14px;
+    }
+    .revhead .clientdetails{
+        align-items: start;
+        gap: 8px;
+    }
+    .clientdetails img{
+        width: 44px;
+    }
+    .clientdetails h4{
+        font-size: 18px;
+    }
+    .clientdetails p{
+        font-size: 14px;
+    }
+    .reviewcontent h5{
+        font-size: 16px;
+        padding-block: 24px 12px;
+    }
+    .latestnews #plus-sign{
+        top: 376px;
+        width: 168px;
+    }
+    .newsform{
+        padding: 88px 68px;
+    }
+    .newsform form{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+        margin-block-start: 40px;
+    }
+    .newsform h3{
+        font-size: 32px;
+    }
+    .newsform #plane{
+        width: 116px;
+    }
+    .newsform .input-form input{
+        padding: 20px 68px;
+        font-size: 16px;
+    }
+    .input-form img{
+        top: 18px;
+        width: 24px;
+    }
+    .newsform form button{
+        width: 100%;
+    }
+    footer form{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    }
+    footer form button:nth-child(1){
+        grid-column: 1;
+        padding: 36px 10px;
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+    footer form button:nth-child(2), footer form button:nth-child(3){
+        padding: 28px 10px;
+    }
+    footer form button p{
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+    footer form button img{
+        width: 32px;
+    }
+    .sponsor-logo::-webkit-scrollbar-thumb{
+        background: #1d956b1c;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-section{
+        width: 100%;
+    }
+    .hero-section h1{
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 2.5rem;
+    }
+    form[method=get]{
+        margin: auto;
+        width: 84%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        background: transparent;
+        padding-inline: 24px 24px;
+    }
+    form[method=get] #subtn{
+        background: #1D956A;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        outline: none;
+        border: none;
+        padding: 8px 24px;
+        border-radius: 8px;
+        margin-top: 36px;
+    }
+    form[method=get] button p{
+        font-size: 13px;
+        font-weight: 500;
+        color: #FFFFFF;
+    }
+    .formcontent input{
+        max-width: 152px;
+    }
+    form[method=get] button{
+        display: none;
+    }
+    .sponsor-logo{
+        background: transparent;
+        gap: 24px;
+    }
+    .sponsor-logo::-webkit-scrollbar-thumb, .aboutcon-flex::-webkit-scrollbar-thumb, .destgrid::-webkit-scrollbar-thumb{
+        background: #191919;
+    }
+    .about{
+        padding-block: 48px 16px;
+    }
+    .about svg{
+        width: 20px;
+        height: 20px;
+    }
+    .service{
+        padding-block: 48px 16px;
+    }
+    .servicecontent{
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+    .destination h3{
+        font-size: 16px;
+    }
+    .desthead h4{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .desthead .star svg{
+        width: 12px;
+    }
+    .destinationcontent span svg{
+        width: 12px;
+    }
+    .dest-icon p{
+        font-size: 10px;
+    }
+    .destinationcontent p{
+        margin-block: 6px;
+    }
+    .destcon p{
+        font-size: 14px;
+    }
+    .destcon button{
+        font-size: 12px;
+        padding: 6px 16px;
+    }
+    .destarrow img{
+        width: 40px;
+    }
+    .review{
+        padding-block: 40px;
+        width: 100%;
+    }
+    .review h3{
+        font-size: 16px;
+    }
+    .reviewcontent{
+        width: 280px;
+        padding: 20px;
+    }
+    .revhead .staricon svg{
+        width: 8px;
+    }
+    .revhead .clientdetails{
+        align-items: start;
+        gap: 8px;
+    }
+    .clientdetails img{
+        width: 32px;
+    }
+    .clientdetails h4{
+        font-size: 14px;
+    }
+    .clientdetails p{
+        font-size: 12px;
+    }
+    .reviewcontent h5{
+        font-size: 13px;
+        padding-block: 24px 12px;
+    }
+    .reviewcontent p{
+        font-size: 10px;
+        padding-block: 4px 16px;
+    }
+    .reviewarrow{
+        padding-top: 24px;
+    }
+    .reviewarrow img{
+        width: 16px;
+    }
+    .latestnews #plus-sign{
+        top: 280px;
+        width: 114px;
+    }
+    .newsform{
+        padding: 68px 48px;
+        border-top-left-radius: 88px;
+        margin-block: 60px;
+    }
+    .newsform h3{
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .newsform form{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .newsform .inputform input{
+        width: 200px;
+    }
+    .newsform #plane{
+        top: -32px;
+        right: 8px;
+        width: 47px;
+    }
+    .newsform .input-form input{
+        padding: 16px 68px;
+    }
+    .input-form img{
+        top: 16px;
+        left: 28px;
+        width: 20px;
+    }
+    footer form{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    }
+    footer form button:nth-child(1){
+        grid-column: 1;
+        padding: 30px 10px;
+        font-size: 20px;
+    }
+    footer form button:nth-child(2), footer form button:nth-child(3){
+        padding: 25px 10px;
+    }
+    footer form button p{
+        font-size: 20px;
+    }
+    footer form button img{
+        width: 24px;
+    }
+    footer h3{
+        color: #FFFFFF;
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    .footercontent{
+        flex-direction: column;
+        align-items: normal;
+        gap: 68px;
+    }
+    .footcon-flex{
+        justify-content: space-between;
+    }
+    .footcon{
+        display: grid;
+        gap: 16px;
+    }
+    .footcon p{
+        font-size: 15px;
+    }
+    .footercontent ul li a{
+        font-size: 18px;
+    }
+    .foot p{
+        font-size: 15px;
+    }
+    footer img{
+        width: 40px;
+    }
+    .backto{
+        display: block;
+    }
+}
