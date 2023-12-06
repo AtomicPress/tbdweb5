@@ -716,17 +716,16 @@ footer form button:nth-child(2), footer form button:nth-child(3){
     background: transparent;
     border: 1px solid #282828;
     border-radius: 100px;
-    padding: 40px 94px;
+    padding: 40px clamp(20px, 5vw, 94px);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
     color: #FFFFFF;
-    white-space: nowrap;
 }
 
 footer form button p{
-    font-size: 40px;
+    font-size: clamp(25px, 2vw, 40px);;
     color: #FFFFFF;
 }
 
