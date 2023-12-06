@@ -408,7 +408,7 @@ form[method=get] #subtn{
 
 .destgrid{
     display: grid;
-    grid-template-columns: repeat(3, minmax(270px, 1fr));
+    grid-template-columns: repeat(3, minmax(310px, 1fr));
     gap: 24px;
     overflow-x: scroll;
     margin-block: clamp(30px, 4vw, 72px);
@@ -722,6 +722,7 @@ footer form button:nth-child(2), footer form button:nth-child(3){
     justify-content: center;
     gap: 16px;
     color: #FFFFFF;
+    white-space: nowrap;
 }
 
 footer form button p{
