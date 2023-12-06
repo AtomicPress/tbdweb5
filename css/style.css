@@ -710,13 +710,14 @@ footer form button:nth-child(1){
     padding: 48px 0px;
     color: #FFFFFF;
     font-size: 40px;
+    border: none;
 }
 
 footer form button:nth-child(2), footer form button:nth-child(3){
     background: transparent;
     border: 1px solid #282828;
     border-radius: 100px;
-    padding: 40px clamp(20px, 3vw, 94px);
+    padding: clamp(10px, 3vw, 40px) clamp(15px, 3vw, 94px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -725,7 +726,7 @@ footer form button:nth-child(2), footer form button:nth-child(3){
 }
 
 footer form button p{
-    font-size: clamp(25px, 2vw, 40px);;
+    font-size: clamp(20px, 2vw, 40px);;
     color: #FFFFFF;
 }
 
